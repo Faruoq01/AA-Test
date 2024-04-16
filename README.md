@@ -52,11 +52,6 @@ $ yarn run start:dev
 $ Go to your browser and hit GET /create-account. This returns an account address by running the service and userOpHash, which was also called from the utils function to try to send a sponsored user operation using stackup bundler api to transfer token from a deployed ERC20 contract account.
 ```
 
-```bash
-# watch mode
-$ yarn run start:dev
-```
-
 ## Test
 
 ```bash
