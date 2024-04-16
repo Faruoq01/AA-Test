@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { sendUserOperation } from './util';
 import { ethers } from "ethers";
-import { Presets, Client } from "userop";
+import { Presets } from "userop";
 
 const rpcUrl ="https://public.stackup.sh/api/v1/node/ethereum-sepolia";
 const paymasterUrl = "https://api.stackup.sh/v1/paymaster/caa330f73ce5172bcaac04a6000633be956dfe1e40a414d0ce5a01c3074619de"; 
@@ -24,7 +24,9 @@ export class AppService {
     var builder = await Presets.Builder.SimpleAccount.init(signer, rpcUrl, opts);
     const address = builder.getSender();
     console.log(`Account address: ${address}`);
-    // sendUserOperation(rpcUrl, builder, signer);
+
+    // send a user operation util function
+    sendUserOperation(rpcUrl, builder, signer);
     return address;
   }
 }

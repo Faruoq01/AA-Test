@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Clone the repository
+
+```bash
+$ git clone https://github.com/Faruoq01/AA-Test.git
+```
+
 ## Installation
 
 ```bash
@@ -35,14 +41,20 @@ $ yarn install
 ## Running the app
 
 ```bash
-# development
-$ yarn run start
-
 # watch mode
 $ yarn run start:dev
+```
 
-# production mode
-$ yarn run start:prod
+## Create an account
+
+```bash
+# watch mode
+$ Go to your browser and git GET /create-account. This returns an account address by running the service and userOpHash, which was also called from the utils function to try to send a sponsored user operation from stackup bundler api to transfer token from a deployed ERC20 contract account.
+```
+
+```bash
+# watch mode
+$ yarn run start:dev
 ```
 
 ## Test
@@ -56,6 +68,7 @@ $ yarn run test:e2e
 
 # test coverage
 $ yarn run test:cov
+
 ```
 
 ## Support
